@@ -6,10 +6,16 @@ import Dashboard from "./pages/Dashboard";
 
 const App = () => {
   return (
+    <div className="App">
+    <header className="App-header">
+    <Router>
     <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
+    </Router>
+      </header>
+    </div>
   );
 };
 
